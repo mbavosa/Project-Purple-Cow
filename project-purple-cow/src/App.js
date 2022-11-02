@@ -1,25 +1,34 @@
-import React, { useState } from "react";
-import Button from "./components/Button";
-import "./assets/css/style.css";
+import React from 'react';
+import './App.css';
 
-export default function App() {
-  const [count, setCount] = useState(0);
+import useTodo from "./hooks"
 
-  let incrementCount = () => {
-    setCount(count + 1);
-  };
+function App() {
 
+  let {
+    count,
+    updateCount,
+    loading,
+  } = useTodo(1)
+  
+  let display = count
+
+  if(loading){
+    display = "..."
+  }
   return (
-    <div className="app">
-      <div>
-        <div className="count">
-          <h3>Count:</h3>
-          <h1>{count}</h1>
-        </div>
-        <div className="buttons">
-          <Button title={"+"} action={incrementCount} />
-        </div>
-      </div>
+    <div className="App">
+      <header className="App-header">
+        
+          <h1>{display}</h1>
+
+          <br/>
+
+          <button onClick={updateCount}>Count</button>
+           
+      </header>
     </div>
   );
 }
+
+export default App;
