@@ -1,11 +1,11 @@
 # Project-Purple-Cow
 
-# Future updates, changes, or outstanding code I would like to add or would recommend be added
+## Future updates, changes, or outstanding code I would like to add or would recommend be added
 
 - More dynamic, up to date styling, possibly purple themed to match Fearless color scheme
 - On site tutorial of how the app is working with react
 
-# Documentation of any assumptions, changes, or details of the implementation that materially impact the addition of future features. 
+## Documentation of any assumptions, changes, or details of the implementation that materially impact the addition of future features. 
 
 - Built with:
 - node version 19.0.0
