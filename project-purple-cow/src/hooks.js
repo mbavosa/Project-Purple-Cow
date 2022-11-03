@@ -13,7 +13,7 @@ function useCounter(initState){
     const getData = () => {
         console.log("api loading...")
         setLoading(true)
-        fetch('https://api.countapi.xyz/hit/1ccb732e-b55a-4404-ad3f-0f99c02fe44e')
+        fetch('https://api.countapi.xyz/hit/project-purple-cow/1ccb732e-b55a-4404-ad3f-0f99c02fe44e')
         .then( (response) => {
             response.json().then( (data) => {
                 console.log(data)
